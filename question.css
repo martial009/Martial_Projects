@@ -1,0 +1,356 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/Images/backquestion.jfif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    box-sizing: border-box;
+    
+}
+/* ============CONTAINER============== */
+.container{
+    display: flex;
+    padding: 5rem;
+    /* border: white 1px solid; */
+}
+/*=================== QUESTION SIDE======================== */
+.questionSide{
+    margin-top: -3rem;
+    padding: 10px;
+    padding-top: 30px;
+    flex: 3;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 3rem;
+    width: 700px;
+    cursor: default;
+}
+.question{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: black;
+    border-radius: 30px;
+    line-height: 6rem;
+    border: #1F0657 solid 3px;
+}
+.opt{
+    background-size: 100%;
+    height: 1.5rem;
+    width: 500px;
+}
+/* ===========OPTION 1========================= */
+.spn {
+    color: #d3a02e;
+}
+
+
+
+.option1{
+    grid-row: 3;
+    line-height: 2.5rem;
+    grid-column: 1;
+    padding-left: 5px;
+    width: 336px;
+    background-color: black;
+    border-radius: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: #1F0657 solid 3px;
+    height: 50px;
+}
+.option1:hover{
+    background-color: #d3a02e;
+    color: black;
+    transition: 500ms;
+}
+/* ==================OPTION 2=========================== */
+.option2{
+    border: #1F0657 solid 3px;
+    grid-column: 2;
+    grid-row: 3;
+    line-height: 2rem;
+    grid-row: 4;
+    padding: 5px;
+    width: 336px;
+    background-color: black;
+    border-radius: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    height: 50px;
+}
+.option2:hover{
+    background-color: #d3a02e;
+    color: black;
+    transition: 500ms;
+}
+/* ===================OPTION 3===================== */
+.option3{
+    grid-column: 1;
+    grid-row: 4;
+    padding-left: 5px;
+    line-height: 2.5rem;
+    width: 336px;
+    background-color: black;
+    border-radius: 40px;
+    cursor: pointer;
+    border: #1F0657 solid 3px;
+    height: 50px;
+}  
+.option3:hover{
+    background-color: #d3a02e;
+    color: black;
+    transition: 500ms;
+}
+/* ===============OPTION 4============================ */
+.option4{
+    grid-column: 2;
+    grid-row: 4;
+    padding-left: 5px;
+    line-height: 2.5rem;
+    width: 336px;
+    background-color: black;
+    border-radius: 40px;
+    cursor: pointer;
+    border: #1F0657 solid 3px;
+    height: 50px;
+    
+}
+.option4:hover{
+    background-color: #d3a02e;
+    color: black;
+    transition: 500ms;
+}
+/* .seperationBreak{
+    height: 100;
+    width: 1px;
+    border: black 1px solid;
+    margin-left: 100px;
+} */
+
+/* ================SCORE/ MONEY SIDE=========== */
+.moneySide{    
+ padding: 30px;  
+ line-height: 10vh;
+ border-radius: 10px;
+ margin-left: 30px;
+ margin-top: -5%;
+ flex: 1;
+ line-height: 40px;
+text-align:center;
+cursor: none;
+font-size: 159px;
+}
+/* .listOfMoney{
+   list-style: none;
+   color: #D3A02E;
+   font-weight: 700;
+} */
+
+/* =====================LIFE LINE SIDE===================== */
+.lifeLines{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-left: 250px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.fifty{
+ background-color: black;
+ padding: 20px;
+ border-radius: 50%;
+ cursor: pointer;
+ border: #1F0657 solid 3px;
+}
+.fifty:hover{
+    background-color: blue;
+    color: black;
+    font-weight: bolder;
+    border: whitesmoke solid 3px;
+}
+.callAFriend{
+    background-color: black;
+ padding: 20px;
+ border-radius: 50%; 
+ cursor: pointer;
+ border: #1F0657 solid 3px;
+}
+.callAFriend:hover{
+    background-color: blue;
+    color: black;
+    font-weight: bolder;
+    border: whitesmoke solid 3px;
+}
+.askTheAudience{
+    background-color: black;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: #1F0657 solid 3px;
+}
+.askTheAudience:hover{
+    background-color: blue;
+    color: black;
+    font-weight: bolder;
+    border: whitesmoke solid 3px;
+}
+/* ===========CONTER========================== */
+/* .counter{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 400px;
+    cursor: not-allowed;
+    border: #1F0657 solid 3px;
+} */
+.hide {
+    display: none;
+}
+.hiden {
+    display: none;
+}
+/* =======YOU'RE RIGHT================ */
+.correct{
+    background-image: url(/Images/hand.jfif);
+    background-repeat: no-repeat;
+    height: 50vh;
+    width:800px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    background-size: 100%;
+    text-align: center;
+    /* display: none; */
+}
+.right{
+    font-size: 50px;
+    color: white;
+}
+.next{
+    height: 80px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: blue;
+}
+.next:hover{
+    background-color: whitesmoke;
+    color: blue;
+}
+.wrong{
+    background-color: gray;
+    border-radius: 20px;
+    box-shadow: black 2px 5px 11px;
+    height: 50vh;
+    width:800px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    background-size: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    /* display: none; */
+}
+.gameover a{
+    font-size: 30px;
+    font-weight: 700;
+    background-color: blue;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.gameover a:hover{
+  background-color: whitesmoke;
+  color: blue;
+}
+.friend{
+    height: 30vh;
+    padding: 30px;
+    background-color: whitesmoke;
+    width: 50vw;
+    color: blue;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    border-radius: 15px;
+    box-shadow: black 2px 2px 2px 2px ;
+}
+/* ============ */
+@media screen and (max-width :1000px) {
+    body{
+        background-color: darkblue;
+        background-image: none;
+    }
+    .moneySide {
+        display: none;
+    }
+}
+@media screen and (max-width :500px){
+    body{
+        background-image: none;
+        background-color: darkblue;
+        height: 100%;
+        width: 100%;}
+    .questionSide{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .question{
+        width: 100%;
+    }
+    .option1{
+        width: 100%;
+    }
+    .option2{
+        width: 100%;
+    }
+    .option3{
+        width: 100%;
+    }
+    .option4{
+        width: 100%;
+    }
+    .moneySide{
+        display: none;
+    }
+}
+.audienceChart{
+    background-image:url(Images/audience.jfif);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+.logo{
+    height: 200px;
+    margin-left: 350px;
+}
